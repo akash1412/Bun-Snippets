@@ -1,0 +1,38 @@
+{
+  "name": "bun-vscode-starter",
+  "main": "./dist/extension.js",
+  "icon": "res/icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.78.1"
+  },
+  "keywords": [
+    "bun",
+    "javascript",
+    "typescript",
+    "vscode"
+  ],
+  "scripts": {
+    "build": "bun run build.mjs",
+    "dev": "bun --watch run build.mjs",
+    "prepublish": "npm version patch && bun run build",
+    "publish": "bunx vsce publish"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.2.7",
+    "@types/vscode": "^1.82.0",
+    "@vscode/vsce": "^2.21.0",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "nr": "^0.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "version": "0.0.5"
+}
