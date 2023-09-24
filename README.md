@@ -1,4 +1,4 @@
-# bun-ssr
+# bun-vscode-starter
 
 To install dependencies:
 
