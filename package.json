@@ -1,5 +1,8 @@
 {
-  "name": "bun-vscode-starter",
+  "name": "vscode-extension",
+  "displayName": "Vscode Starter Template",
+  "version": "0.0.7",
+  "publisher": "Akash",
   "main": "./dist/extension.js",
   "icon": "res/icon.png",
   "files": [
@@ -13,6 +16,9 @@
     "javascript",
     "typescript",
     "vscode"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
   ],
   "scripts": {
     "build": "bun run build.mjs",
@@ -33,6 +39,5 @@
     "nr": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "version": "0.0.7"
+  }
 }
